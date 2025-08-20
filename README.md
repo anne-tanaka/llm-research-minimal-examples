@@ -13,7 +13,7 @@ A collection of minimal, reproducible code examples for LLM research.
 ### components
 - Datasets loading
 - Tokenization for llama
-- Trainer with original loss function
+- Trainer with original loss function using PEFT QLoRA and DeepSpeed with ZeRO3
 - Accuracy function
 - Validation
 - Saving checkpoints
