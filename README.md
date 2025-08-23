@@ -1,21 +1,8 @@
 # LLM Research Minimal Examples
 
-A collection of minimal, reproducible code examples for LLM research.
+This repository contains minimal, self-contained code examples from my LLM research.
 
-## Contents
-- [QLoRA - LLaMA fine-tuning](qlora-llama/)
-- [QLoRA - Mistral fine-tuning](qlora-mistral/)
-- [PPO with LLaMA](ppo/)
-- [GRPO experiments](grpo/)
+## Projects
+* **[crystal-evaluation-reasoning](./crystal-evaluation-reasoning/)**: An implementation inspired by the Crystal project for generating evaluation rationales using a two-stage (SFT+RL) approach.
+* **[another-future-project](./another-future-project/)**: (A brief description of the next project).
 
-## Enviroment
-
-
-## QLoRA - LLaMA fine-tuning
-### components
-- Datasets loading
-- Tokenization for llama
-- Trainer with original loss function using PEFT QLoRA and DeepSpeed with ZeRO3
-- Accuracy function
-- Validation
-- Saving checkpoints
