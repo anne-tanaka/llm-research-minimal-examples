@@ -17,6 +17,7 @@ From this directory (`crystal-evaluation-reasoning`), run the following command 
 
 ```bash
 docker build --network=host -t crystal-env:latest .
+```
 
 ### 2. Run the Docker Container
 
@@ -37,6 +38,7 @@ docker run --network host \
   # other options
   --shm-size=164g \
   crystal-env:latest
+```
 
 ## Contents
 - [QLoRA - LLaMA fine-tuning](qlora-llama/)
