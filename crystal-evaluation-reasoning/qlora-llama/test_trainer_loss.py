@@ -468,8 +468,8 @@ class Trainer:
                 
             # optimizer step は勾配累積の最後で
             if (i + 1) % self.args.gradient_accumulation_steps == 0:
-                self.optimizer.step()  # 複数ミニバッチ分の蓄積された勾配を使って、モデルの重みを一度だけ更新
-                self.optimizer.zero_grad()  # 前回のステップで計算された勾配をリセット
+                self.optimizer.step()  # 複数ミニバッチ分の蓄積された勾配を使って、モデルの重みを一度だけ更新 https://docs.pytorch.org/docs/stable/generated/torch.optim.Optimizer.step.html
+                self.optimizer.zero_grad()  # 前回のステップで計算された勾配をリセット https://docs.pytorch.org/docs/stable/generated/torch.optim.Optimizer.zero_grad.html
 
         # qk_loss, qa_loss, qka_loss の記録のための処理
         # GPUごとに各バッチの損失を平均して最終的な値を計算。
